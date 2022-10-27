@@ -1,0 +1,27 @@
+{
+  "name": "wts_webserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moomoo-95/WTS_WEBSERVER.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moomoo-95/WTS_WEBSERVER/issues"
+  },
+  "homepage": "https://github.com/moomoo-95/WTS_WEBSERVER#readme",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "express": "^4.18.2",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
+    "ws": "^8.10.0"
+  }
+}
