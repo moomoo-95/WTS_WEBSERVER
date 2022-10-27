@@ -14,6 +14,7 @@ const SHARING_FLAG_KEY = "sharingFlag"
 
 // rabbitmq 통신 객체
 let rmqConnection = null;
+let rmqChannel = null;
 
 // rabbitmq 연결
 function connect() {
@@ -96,6 +97,15 @@ function setRmqChannel(channel) {
     {
         noAck: true
     });
+    // channel.on('error', function(error0) {
+    //     if(error0 == "IllegalOperationError: Channel closed") {
+    //         logger.warn("RabbitMQ Channel Fail.");
+    //         logger.info("RabbitMQ ReConsume...");
+    //         setRmqChannel(channel);
+    //     } else {
+    //         logger.warn("rabbitmqModule.setRmqChannel.channel Exception: " + error0.stack);
+    //     }
+    // });
     logger.info("RabbitMQ ("+config.RMQ_CONSUME_QUEUE+") Consume start.");
     rmqChannel = channel;
 }
