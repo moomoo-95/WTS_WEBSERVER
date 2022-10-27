@@ -6,7 +6,7 @@ module.exports = {
     HTTP_PORT : 8000,
     HTTPS_PORT : 8443,
 
-    RMQ_SERVER_URI : "amqp://ustream:ustream.123@192.168.5.227",
+    RMQ_SERVER_URI : "",
     // RMQ_PUBLISH_QUEUE : "S_SCM",
     // RMQ_CONSUME_QUEUE : "S_API",
     RMQ_PUBLISH_QUEUE : "WEB_SERVER_PUB",
